@@ -1,0 +1,73 @@
+# WebLevelInspector Root .gitignore
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS System Files
+.DS_Store
+
+# Android_application dependencies
+Android_application/node_modules/
+node_modules/
+
+# Expo generated files and builds
+Android_application/.expo/
+Android_application/dist/
+Android_application/web-build/
+Android_application/expo-env.d.ts
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native Android/iOS builds & directories
+Android_application/android/
+Android_application/ios/
+/android
+/ios
+
+# Keystores, keys, and credentials
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+
+# Metro Bundler health checks
+.metro-health-check*
+Android_application/.metro-health-check*
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*debug.log
+Android_application/npm-debug.*
+Android_application/yarn-debug.*
+Android_application/yarn-error.*
+
+# local env files
+.env*.local
+Android_application/.env*.local
+
+# typescript
+*.tsbuildinfo
+Android_application/*.tsbuildinfo
+
+# App example folder from Expo
+Android_application/app-example/
+app-example/
+
+# Kotlin / Native compilation files
+.kotlin/
+*.orig.*
+Android_application/.kotlin/
+Android_application/*.orig.*

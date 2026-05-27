@@ -20,33 +20,7 @@ The project consists of three main components:
 2. **ESP8266 Master Node:** Central processing unit inside the home. It periodically queries the Slave nodes via HTTP, handles display rendering on a 16x2 I2C LCD, blinks status indicator LEDs, detects water flow trends (rising levels), and has a physical push button for instant refreshing.
 3. **Android Dashboard Application:** A modern React Native + Expo app that connects to the same network, pulling data directly from the nodes to display a gorgeous real-time visual water gauge and advanced tank metrics.
 
-```mermaid
-graph TD
-    subgraph "Water Tanks (Slaves)"
-        S1[Slave 1: UG Tank<br>ESP8266 + AJ-SR04T]
-        S2[Slave 2: Roof Tank<br>ESP8266 + AJ-SR04T]
-    }
-
-    subgraph "Central Controller (Master)"
-        M[Master Node<br>ESP8266]
-        LCD[I2C LCD 16x2 Display]
-        LEDs[Status LEDs<br>Red, Yellow, Green]
-        Btn[Manual Refresh Button]
-        
-        M --> LCD
-        M --> LEDs
-        Btn --> M
-    end
-
-    subgraph "Mobile Client"
-        App[Expo / React Native App<br>Android Dashboard]
-    end
-
-    S1 -- "HTTP GET /measurement (WiFi)" --> M
-    S2 -- "HTTP GET /measurement (WiFi)" --> M
-    S1 -- "HTTP GET /measurement" --> App
-    S2 -- "HTTP GET /measurement" --> App
-```
+![Water Level Inspector Flow Chart](Illustrations/mermaid_chart.png)
 
 ---
 

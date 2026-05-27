@@ -135,7 +135,7 @@ Sketches are built with Arduino IDE. Make sure you install the `ESP8266` board l
 
 ## 📱 Mobile Dashboard App (Expo / React Native)
 
-The mobile app is a beautiful dark-mode interface built with React Native and Expo. It displays live animated water gauges, calculates volumetric differences, tracks connection statuses, and allows local configuration storage.
+The mobile app is a beautiful dark-mode interface built with React Native and Expo, coded in collaboration with AI coding assistants. It displays live animated water gauges, calculates volumetric differences, tracks connection statuses, and allows local configuration storage.
 
 | Dashboard Screen | App Settings & Configuration |
 | :---: | :---: |
